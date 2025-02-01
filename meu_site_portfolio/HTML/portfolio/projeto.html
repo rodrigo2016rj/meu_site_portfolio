@@ -1,0 +1,27 @@
+<div id="div_{identificador_do_projeto}" class="projeto">
+  <h3 id="h3_titulo_{identificador_do_projeto}" class="titulo_do_projeto">
+    <span class="nome_do_projeto">{nome_do_projeto}</span>
+    <br class="quebra_de_linha_magica"/>
+    <a class="rotulo_da_aba rotulo_da_aba_descricao destaque" 
+       href="#div_{identificador_do_projeto}">Descrição</a>
+    <a class="rotulo_da_aba rotulo_da_aba_imagens" 
+       href="#div_{identificador_do_projeto}">Imagens</a>
+    <a class="rotulo_da_aba rotulo_da_aba_videos" 
+       href="#div_{identificador_do_projeto}">Vídeos</a>
+  </h3>
+  <div class="aba aba_descricao">
+    <div class="local_da_imagem_destaque_do_projeto">
+      <img class="imagem_destaque_do_projeto" alt="Imagem destaque do projeto {nome_do_projeto}" 
+           src="{imagem_destaque_do_projeto}"/>
+    </div>
+    <div class="local_da_descricao_do_projeto">
+      <span class="descricao_do_projeto">{descricao_do_projeto}</span>
+    </div>
+  </div>
+  <div class="aba aba_imagens tag_oculta">
+    {imagens_do_projeto}
+  </div>
+  <div class="aba aba_videos tag_oculta">
+    {videos_do_projeto}
+  </div>
+</div>

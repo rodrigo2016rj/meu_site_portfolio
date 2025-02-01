@@ -1,0 +1,14 @@
+Options -Indexes
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/meu_site_portfolio/PHP/$1.php -f
+RewriteRule (.+)\.php PHP/$1.php [L]
+RewriteRule ^$ PHP/portfolio.php [L]
+
+<files ~ "^.*\.([Hh][Tt][Aa])">
+order allow,deny
+deny from all
+satisfy all
+</files>

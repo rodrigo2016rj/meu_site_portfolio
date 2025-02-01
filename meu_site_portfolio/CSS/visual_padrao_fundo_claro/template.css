@@ -1,0 +1,170 @@
+/* Estilos iniciais */
+body{
+  margin: 0px;
+  background-color: #FFF;
+  color: #3D3D3D;
+  font-family: Verdana, Tahoma, Times New Roman, serif;
+  font-size: 12pt;
+}
+h1, h2, h3, h4, h5, h6{
+  margin: 0px;
+  font-family: Verdana, Tahoma, Times New Roman, serif;
+  font-size: 22pt;
+  font-weight: normal;
+}
+p{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: justify;
+}
+a{
+  color: #0000B0;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:visited{
+  color: #0000B0;
+}
+a:hover{
+  color: #0000B0;
+  text-decoration: underline;
+}
+img{
+  cursor: url("../../Imagens/Cursores/Mais.png") 15 15, auto;
+}
+
+/* Cabeçalho do sistema */
+#div_cabecalho_do_sistema{
+  padding-top: 32px;
+  background-color: #E0E0FF;
+  z-index: 2;
+}
+@media(max-width: 640px){
+  #div_cabecalho_do_sistema{
+    padding-top: 16px;
+  }
+}
+#h1_titulo_do_sistema{
+  text-align: center;
+}
+@media(max-width: 640px){
+  #h1_titulo_do_sistema{
+    margin-right: auto;
+    margin-left: auto;
+    width: 220px;
+    font-size: 16pt;
+  }
+}
+#nav_menu_do_sistema{
+  margin-top: 40px;
+  border-top: 1px solid #404090;
+  border-bottom: 1px solid #404090;
+  background-color: #FFF;
+  text-align: center;
+}
+@media(max-width: 640px){
+  #nav_menu_do_sistema{
+    margin-top: 20px;
+  }
+}
+#div_opcoes_do_menu_do_sistema{
+  font-size: 0pt;
+  white-space: nowrap;
+  overflow: auto;
+}
+.opcao_do_menu_do_sistema{
+  display: inline-block;
+  border-left: 1px solid #404090;
+  padding: 30px 8px;
+  width: calc(100% / 3 - 1px - 16px);
+  vertical-align: top;
+  font-size: 15pt;
+}
+.opcao_do_menu_do_sistema:first-child{
+  border-left: 1px solid #FFF;
+}
+.opcao_do_menu_do_sistema.destaque{
+  background-color: #EDEDFF;
+}
+.opcao_do_menu_do_sistema:hover{
+  border-left: 1px solid #404090;
+  background-color: #404090;
+  color: #FFF;
+  text-decoration: none;
+}
+@media(max-width: 640px){
+  .opcao_do_menu_do_sistema{
+    padding: 10px 8px;
+    font-size: 11pt;
+  }
+}
+
+/* Rodapé do sistema */
+#div_rodape_do_sistema{
+  position: relative;
+  border-top: 1px solid #000;
+  padding-bottom: 30px;
+  background-color: #E0E0FF;
+  color: #000;
+  z-index: 2;
+}
+#div_autor_do_sistema{
+  padding-top: 25px;
+  font-size: 14pt;
+  text-align: center;
+}
+@media(max-width: 830px){
+  #div_autor_do_sistema{
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 350px;
+    max-width: 350px;
+    font-size: 12pt;
+  }
+}
+#div_tecnologias_usadas_no_sistema{
+  margin-top: 20px;
+  font-size: 14pt;
+  text-align: center;
+}
+@media(max-width: 830px){
+  #div_tecnologias_usadas_no_sistema{
+    margin-top: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 350px;
+    max-width: 350px;
+    font-size: 12pt;
+  }
+}
+
+/* Tags especiais */
+#div_imagem_no_tamanho_original{
+  position: absolute;
+  top: 0px;
+  z-index: 2;
+}
+#div_fechar_imagem{
+  position: absolute;
+  right: 0px;
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  color: #FFF;
+  font-size: 28pt;
+  text-align: center;
+  cursor: pointer;
+}
+#div_fechar_imagem:hover{
+  background-color: #FFF;
+  color: #D00000;
+}
+#imagem_no_tamanho_original{
+  cursor: url("../../Imagens/Cursores/Menos.png") 15 15, auto;
+}
+
+/* Classes para qualquer tag */
+.tag_oculta{
+  display: none !important;
+}
