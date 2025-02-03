@@ -1,11 +1,11 @@
 ## Sobre
-<p>Este sistema é nada mais nada menos que o meu próprio portfolio.</p>
+<p>Este sistema é nada mais nada menos que o meu próprio portfólio.</p>
 
 <p>Este sistema também é uma demonstração de sistema feito apenas com PHP, HTML, CSS e Javascript, sem o uso de quaisquer frameworks, bibliotecas ou template engines.</p>
 
 <p>Este sistema foi feito por mim, mas qualquer pessoa é livre para reutilizar e/ou modificar. Apenas tome cuidado, pois nesse caso específico eu coloquei muitas informações minhas diretamente no código, então para reutilizar será necessário modificar muitas linhas no arquivo portfolio.php e algumas linhas em outros arquivos também.</p>
 
-<p>Observação: Ainda está incompleto, fiz apenas a página portfólio por enquanto.</p>
+<p>Observação: Ainda está incompleto, fiz apenas a página portfólio e a página currículo.</p>
 
 <br/>
 

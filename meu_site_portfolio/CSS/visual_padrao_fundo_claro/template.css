@@ -81,7 +81,8 @@ img{
   font-size: 15pt;
 }
 .opcao_do_menu_do_sistema:first-child{
-  border-left: 1px solid #FFF;
+  border-left: none;
+  padding-left: 9px;
 }
 .opcao_do_menu_do_sistema.destaque{
   background-color: #EDEDFF;
@@ -91,6 +92,9 @@ img{
   background-color: #404090;
   color: #FFF;
   text-decoration: none;
+}
+.opcao_do_menu_do_sistema:first-child:hover{
+  border-left: none;
 }
 @media(max-width: 640px){
   .opcao_do_menu_do_sistema{
