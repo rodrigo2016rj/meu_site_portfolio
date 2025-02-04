@@ -25,6 +25,14 @@ function carregar_pagina(){
   $html = str_replace('{visual_escolhido}', $visual_escolhido, $html);
 
   $html_conteudo_da_pagina = file_get_contents('../HTML/sobre_mim/conteudo_da_pagina.html');
+
+  $fuso_horario_de_brasilia = new DateTimeZone('America/Sao_Paulo');
+  $momento_atual = new DateTime('now', $fuso_horario_de_brasilia);
+  $data_do_meu_nascimento = new DateTime('1991-09-03 00:00:00', $fuso_horario_de_brasilia);
+  $tempo_decorrido = date_diff($data_do_meu_nascimento, $momento_atual);
+  $idade = $tempo_decorrido->y;
+  $html_conteudo_da_pagina = str_replace('{idade}', $idade, $html_conteudo_da_pagina);
+
   $html = str_replace('{conteudo_da_pagina}', $html_conteudo_da_pagina, $html);
 
   echo $html;

@@ -1,0 +1,47 @@
+@media(max-width: 640px){
+  #h1_titulo_do_sistema{
+    width: 98%;
+  }
+}
+#div_sobre_mim{
+  margin-right: auto;
+  margin-left: auto;
+  padding: 30px 20px 20px 20px;
+  max-width: calc(1000px - 20px - 20px);
+  line-height: 28px;
+  font-size: 14pt;
+}
+@media(max-width: 600px){
+  #div_sobre_mim{
+    padding: 25px 10px 10px 10px;
+    max-width: calc(1000px - 10px - 10px);
+  }
+}
+#div_foto{
+  text-align: center;
+}
+#imagem_foto{
+  width: 100%;
+  max-width: 400px;
+}
+#div_nome{
+  margin-top: 20px;
+  text-align: justify;
+  text-indent: 76px;
+}
+@media(max-width: 600px){
+  #div_nome{
+    text-align: center;
+    text-indent: 0px;
+  }
+}
+#div_descricao{
+  margin-top: 16px;
+  text-align: justify;
+  text-indent: 76px;
+}
+@media(max-width: 600px){
+  #div_descricao{
+    text-indent: 0px;
+  }
+}

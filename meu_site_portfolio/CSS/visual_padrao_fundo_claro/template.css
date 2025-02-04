@@ -37,7 +37,6 @@ img{
 #div_cabecalho_do_sistema{
   padding-top: 32px;
   background-color: #E0E0FF;
-  z-index: 2;
 }
 @media(max-width: 640px){
   #div_cabecalho_do_sistema{

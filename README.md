@@ -5,7 +5,7 @@
 
 <p>Este sistema foi feito por mim, mas qualquer pessoa é livre para reutilizar e/ou modificar. Apenas tome cuidado, pois nesse caso específico eu coloquei muitas informações minhas diretamente no código, então para reutilizar será necessário modificar muitas linhas no arquivo portfolio.php e algumas linhas em outros arquivos também.</p>
 
-<p>Observação: Ainda está incompleto, fiz apenas a página portfólio e a página currículo.</p>
+<p>Observação: Não está completo ainda.</p>
 
 <br/>
 
