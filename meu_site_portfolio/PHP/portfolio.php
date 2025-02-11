@@ -31,13 +31,13 @@ function carregar_pagina(){
   $array_create_test_tabs_firefox = array();
   $array_create_test_tabs_firefox['nome'] = 'Create Test Tabs FireFox';
   $array_create_test_tabs_firefox['identificador'] = 'create_test_tabs_firefox';
-  $array_create_test_tabs_firefox['imagem_destaque'] = 'https://i.imgur.com/ue9lsLN.png';
+  $array_create_test_tabs_firefox['imagem_destaque'] = 'https://i.imgur.com/xLQ0rAS.png';
   $array_create_test_tabs_firefox['descricao'] = 'Este projeto é um addon para navegadores Mozilla 
 (FireFox, WaterFox e etc) que permite criar abas com formulários preenchidos, facilitando os testes.
 Este addon permite que você registre páginas com formulários do seu projeto, combinações de entradas 
 de formulário para cada página e pares de nome e valor para cada combinação. Após registrar uma 
-página com uma ou mais combinações de entradas de formulário, você pode clicar no botão Criar abas 
-de teste e seu navegador criará uma aba para cada combinação. Cada aba aberta no seu navegador dessa 
+página com uma ou mais combinações de entradas de formulário, você pode clicar no botão "Create Test 
+Tabs" e seu navegador criará uma aba para cada combinação. Cada aba aberta no seu navegador dessa 
 forma aparecerá com o formulário preenchido com os respectivos pares de nome e valor da combinação. 
 Então, basta enviar cada formulário e verificar se o resultado encontrado é o esperado. Este addon 
 é recomendado para desenvolvedores que precisam executar os mesmos testes várias vezes em cada 
@@ -55,6 +55,19 @@ Acesse a página do Create Test Tabs FireFox no Addons Mozilla:
 <a href="https://addons.mozilla.org/firefox/addon/create-test-tabs/" target="blank">
 https://addons.mozilla.org/firefox/addon/create-test-tabs/</a>';
   $array_imagens = array();
+  $array_imagens[] = 'https://i.imgur.com/xLQ0rAS.png';
+  $array_imagens[] = 'https://i.imgur.com/n1bAocC.png';
+  $array_imagens[] = 'https://i.imgur.com/aJrzQNu.png';
+  $array_imagens[] = 'https://i.imgur.com/VjwiHnh.png';
+  $array_imagens[] = 'https://i.imgur.com/p7oYSPY.png';
+  $array_imagens[] = 'https://i.imgur.com/Kh7hox4.png';
+  $array_imagens[] = 'https://i.imgur.com/7FwZRfC.png';
+  $array_imagens[] = 'https://i.imgur.com/MTwPcTy.png';
+  $array_imagens[] = 'https://i.imgur.com/2ekxtKB.png';
+  $array_imagens[] = 'https://i.imgur.com/iSLEQ0b.png';
+  $array_imagens[] = 'https://i.imgur.com/nVexrkF.png';
+  $array_imagens[] = 'https://i.imgur.com/gPN8H8b.png';
+  $array_imagens[] = 'https://i.imgur.com/5CVfrjY.png';
   $array_create_test_tabs_firefox['imagens'] = $array_imagens;
   $array_videos = array();
   $array_create_test_tabs_firefox['videos'] = $array_videos;
@@ -79,6 +92,26 @@ Acesse a página do CRUD Laravel Bootstrap no GitHub:
 <a href="https://github.com/rodrigo2016rj/crud_laravel_bootstrap" target="blank">
 https://github.com/rodrigo2016rj/crud_laravel_bootstrap</a>';
   $array_imagens = array();
+  $array_imagens[] = 'https://i.imgur.com/BYzoAss.png';
+  $array_imagens[] = 'https://i.imgur.com/i6kuSlr.png';
+  $array_imagens[] = 'https://i.imgur.com/UoGbJzp.png';
+  $array_imagens[] = 'https://i.imgur.com/8y090GL.png';
+  $array_imagens[] = 'https://i.imgur.com/73EWbol.png';
+  $array_imagens[] = 'https://i.imgur.com/8vWT2Yt.png';
+  $array_imagens[] = 'https://i.imgur.com/5pylW7F.png';
+  $array_imagens[] = 'https://i.imgur.com/JuMWb3Y.png';
+  $array_imagens[] = 'https://i.imgur.com/XbFswOi.png';
+  $array_imagens[] = 'https://i.imgur.com/FIKM7oo.png';
+  $array_imagens[] = 'https://i.imgur.com/ILBMGdg.png';
+  $array_imagens[] = 'https://i.imgur.com/g9qNlv0.png';
+  $array_imagens[] = 'https://i.imgur.com/w2d6Akl.png';
+  $array_imagens[] = 'https://i.imgur.com/nP7Tds2.png';
+  $array_imagens[] = 'https://i.imgur.com/0CRvyvc.png';
+  $array_imagens[] = 'https://i.imgur.com/aSnHwBK.png';
+  $array_imagens[] = 'https://i.imgur.com/W6O07hX.png';
+  $array_imagens[] = 'https://i.imgur.com/9i8XD13.png';
+  $array_imagens[] = 'https://i.imgur.com/orlynqN.png';
+  $array_imagens[] = 'https://i.imgur.com/1aElHhv.png';
   $array_crud_laravel_bootstrap['imagens'] = $array_imagens;
   $array_videos = array();
   $array_crud_laravel_bootstrap['videos'] = $array_videos;
@@ -401,15 +434,36 @@ https://gitlab.com/rodrigo2016rj/teste_da_proconsult</a>';
     $html_itens_do_catalogo .= $html_item_do_catalogo;
 
     $html_projeto = file_get_contents('../HTML/portfolio/projeto.html');
-    $html_projeto = str_replace('{identificador_do_projeto}', $array_projeto['identificador'], $html_projeto);
-    $html_projeto = str_replace('{nome_do_projeto}', $array_projeto['nome'], $html_projeto);
-    $html_projeto = str_replace('{imagem_destaque_do_projeto}', $array_projeto['imagem_destaque'], $html_projeto);
-    $html_projeto = str_replace('{descricao_do_projeto}', $array_projeto['descricao'], $html_projeto);
 
     $html_imagens_do_projeto = '';
+    $contador = 0;
     foreach($array_projeto['imagens'] as $imagem){
+      $contador++;
+
       $html_imagem_do_projeto = file_get_contents('../HTML/portfolio/imagem_do_projeto.html');
+      $html_imagem_do_projeto = "<td>$html_imagem_do_projeto</td>";
+      $resto_da_divisao = $contador % 3;
+      if($resto_da_divisao === 1){
+        $html_imagem_do_projeto = "<tr>$html_imagem_do_projeto";
+      }
+      if($resto_da_divisao === 0){
+        $html_imagem_do_projeto = "$html_imagem_do_projeto</tr>";
+      }
+      if($contador === 1){
+        $html_imagem_do_projeto = "<table><tbody>$html_imagem_do_projeto";
+      }
+      if($contador === count($array_projeto['imagens'])){
+        switch($resto_da_divisao){
+          case 1:
+            $html_imagem_do_projeto = "$html_imagem_do_projeto<td><div class=\"celula_vazia\"></div></td>";
+          case 2:
+            $html_imagem_do_projeto = "$html_imagem_do_projeto<td><div class=\"celula_vazia\"></div></td></tr>";
+          default:
+            $html_imagem_do_projeto = "$html_imagem_do_projeto</tbody></table>";
+        }
+      }
       $html_imagem_do_projeto = str_replace('{imagem}', $imagem, $html_imagem_do_projeto);
+
       $html_imagens_do_projeto .= $html_imagem_do_projeto;
     }
     if($html_imagens_do_projeto === ''){
@@ -427,6 +481,11 @@ https://gitlab.com/rodrigo2016rj/teste_da_proconsult</a>';
       $html_videos_do_projeto = '<span>Em breve</span>';
     }
     $html_projeto = str_replace('{videos_do_projeto}', $html_videos_do_projeto, $html_projeto);
+
+    $html_projeto = str_replace('{identificador_do_projeto}', $array_projeto['identificador'], $html_projeto);
+    $html_projeto = str_replace('{nome_do_projeto}', $array_projeto['nome'], $html_projeto);
+    $html_projeto = str_replace('{imagem_destaque_do_projeto}', $array_projeto['imagem_destaque'], $html_projeto);
+    $html_projeto = str_replace('{descricao_do_projeto}', $array_projeto['descricao'], $html_projeto);
 
     $html_projetos .= $html_projeto;
   }

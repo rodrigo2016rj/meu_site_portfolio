@@ -84,10 +84,26 @@
 }
 #div_projetos{
   position: relative;
-  left: 300px;
-  border-left: 1px solid #404090;
+  left: 0px;
+  margin-right: auto;
+  margin-left: auto;
   padding: 26px 30px 360px 30px;
-  width: calc(100% - 300px - 1px - 30px - 30px);
+  max-width: 1800px;
+}
+@media(max-width: 2200px){
+  #div_projetos{
+    left: 320px;
+    margin-right: 0px;
+    margin-left: 0px;
+    border-left: 1px solid #404090;
+    width: calc(100% - 320px - 1px - 30px - 30px);
+  }
+}
+@media(max-width: 1920px){
+  #div_projetos{
+    left: 300px;
+    width: calc(100% - 300px - 1px - 30px - 30px);
+  }
 }
 @media(max-width: 920px){
   #div_projetos{
@@ -193,4 +209,87 @@
   .local_da_descricao_do_projeto{
     margin-top: 5px;
   }
+}
+.aba_imagens>table{
+  border-collapse: collapse;
+  min-width: 100%;
+  max-width: 100%;
+}
+#div_create_test_tabs_firefox>.aba_imagens>table{
+  border: 1px solid #404090;
+  background-color: #404090;
+}
+#div_crud_laravel_bootstrap>.aba_imagens>table{
+  border: 1px solid #F0A050;
+  background-color: #F0A050;
+}
+.aba_imagens>table>tbody>tr>td{
+  min-width: calc(100% / 3);
+  max-width: calc(100% / 3);
+}
+.local_da_imagem_do_projeto{
+  min-height: 260px;
+  max-height: 260px;
+  background-color: #FFF;
+  text-align: center;
+  overflow: hidden;
+}
+.celula_vazia{
+  min-height: 260px;
+  max-height: 260px;
+  background-color: #FFF;
+}
+@media(max-width: 1750px){
+  .local_da_imagem_do_projeto{
+    min-height: 220px;
+    max-height: 220px;
+  }
+  .celula_vazia{
+    min-height: 220px;
+    max-height: 220px;
+  }
+}
+@media(max-width: 1380px){
+  .local_da_imagem_do_projeto{
+    min-height: 180px;
+    max-height: 180px;
+  }
+  .celula_vazia{
+    min-height: 180px;
+    max-height: 180px;
+  }
+}
+@media(max-width: 1200px){
+  .local_da_imagem_do_projeto{
+    min-height: 140px;
+    max-height: 140px;
+  }
+  .celula_vazia{
+    min-height: 140px;
+    max-height: 140px;
+  }
+}
+@media(max-width: 1080px){
+  .local_da_imagem_do_projeto{
+    min-height: 110px;
+    max-height: 110px;
+  }
+  .celula_vazia{
+    min-height: 110px;
+    max-height: 110px;
+  }
+}
+@media(max-width: 580px){
+  .local_da_imagem_do_projeto{
+    min-height: 80px;
+    max-height: 80px;
+  }
+  .celula_vazia{
+    min-height: 80px;
+    max-height: 80px;
+  }
+}
+.imagem_do_projeto{
+  min-width: 100%;
+  max-width: 100%;
 }
