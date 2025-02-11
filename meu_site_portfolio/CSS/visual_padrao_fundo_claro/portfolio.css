@@ -223,6 +223,14 @@
   border: 1px solid #F0A050;
   background-color: #F0A050;
 }
+#div_crud_laravel_javascript>.aba_imagens>table{
+  border: 1px solid #00C000;
+  background-color: #00C000;
+}
+#div_crud_laravel_jquery>.aba_imagens>table{
+  border: 1px solid #00C0F0;
+  background-color: #00C0F0;
+}
 .aba_imagens>table>tbody>tr>td{
   min-width: calc(100% / 3);
   max-width: calc(100% / 3);
