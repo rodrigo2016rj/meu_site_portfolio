@@ -231,6 +231,14 @@
   border: 1px solid #00C0F0;
   background-color: #00C0F0;
 }
+#div_crud_laravel_react>.aba_imagens>table{
+  border: 1px solid #E4E400;
+  background-color: #E4E400;
+}
+#div_crud_laravel_vue_inertia>.aba_imagens>table{
+  border: 1px solid #10DA50;
+  background-color: #10DA50;
+}
 .aba_imagens>table>tbody>tr>td{
   min-width: calc(100% / 3);
   max-width: calc(100% / 3);
