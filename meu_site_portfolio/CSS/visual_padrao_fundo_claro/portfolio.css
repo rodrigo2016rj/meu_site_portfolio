@@ -239,6 +239,14 @@
   border: 1px solid #10DA50;
   background-color: #10DA50;
 }
+#div_demonstracao_de_slides_com_code_igniter>.aba_imagens>table{
+  border: 1px solid #007600;
+  background-color: #007600;
+}
+#div_desafio_da_construp>.aba_imagens>table{
+  border: 1px solid #2020A2;
+  background-color: #2020A2;
+}
 .aba_imagens>table>tbody>tr>td{
   min-width: calc(100% / 3);
   max-width: calc(100% / 3);
