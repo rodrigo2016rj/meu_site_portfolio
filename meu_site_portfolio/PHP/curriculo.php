@@ -1,5 +1,9 @@
 <?php
 
+if(strlen($_SERVER['REQUEST_URI']) > 33 and substr($_SERVER['REQUEST_URI'], 33, 1) !== '?'){
+  header('Location: /meu_site_portfolio/curriculo.php');
+}
+
 $acao = isset($_GET['acao']) ? $_GET['acao'] : '';
 switch($acao){
   default:
@@ -23,9 +27,9 @@ function carregar_pagina(){
     }
   }
   $html = str_replace('{visual_escolhido}', $visual_escolhido, $html);
-  
+
   $html_conteudo_da_pagina = file_get_contents('../HTML/curriculo/conteudo_da_pagina.html');
   $html = str_replace('{conteudo_da_pagina}', $html_conteudo_da_pagina, $html);
-  
+
   echo $html;
 }

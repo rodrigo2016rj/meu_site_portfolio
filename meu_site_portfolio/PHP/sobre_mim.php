@@ -1,5 +1,9 @@
 <?php
 
+if(strlen($_SERVER['REQUEST_URI']) > 33 and substr($_SERVER['REQUEST_URI'], 33, 1) !== '?'){
+  header('Location: /meu_site_portfolio/sobre_mim.php');
+}
+
 $acao = isset($_GET['acao']) ? $_GET['acao'] : '';
 switch($acao){
   default:
