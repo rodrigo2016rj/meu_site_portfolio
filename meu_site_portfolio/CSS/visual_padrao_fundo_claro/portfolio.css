@@ -247,6 +247,14 @@
   border: 1px solid #2020A2;
   background-color: #2020A2;
 }
+#div_login_codeigniter_jquery>.aba_imagens>table{
+  border: 1px solid #404070;
+  background-color: #404070;
+}
+#div_login_laravel_pdo_vue_inertia>.aba_imagens>table{
+  border: 1px solid #9258E8;
+  background-color: #9258E8;
+}
 .aba_imagens>table>tbody>tr>td{
   min-width: calc(100% / 3);
   max-width: calc(100% / 3);
