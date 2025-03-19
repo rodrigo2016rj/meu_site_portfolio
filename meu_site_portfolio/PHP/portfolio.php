@@ -566,6 +566,22 @@ Acesse a página do Serviços Laravel Vue Inertia no GitHub:
 <a href="https://github.com/rodrigo2016rj/servicos_laravel_vue_inertia" target="blank">
 https://github.com/rodrigo2016rj/servicos_laravel_vue_inertia</a>';
   $array_imagens = array();
+  $array_imagens[] = 'https://i.imgur.com/tRloTpA.png';
+  $array_imagens[] = 'https://i.imgur.com/8dvHHI9.png';
+  $array_imagens[] = 'https://i.imgur.com/0eFz6ui.png';
+  $array_imagens[] = 'https://i.imgur.com/MUBaaZT.png';
+  $array_imagens[] = 'https://i.imgur.com/4R8TMYs.png';
+  $array_imagens[] = 'https://i.imgur.com/hrvdWm9.png';
+  $array_imagens[] = 'https://i.imgur.com/sRo7Oqj.png';
+  $array_imagens[] = 'https://i.imgur.com/poidwRI.png';
+  $array_imagens[] = 'https://i.imgur.com/lkuPtCW.png';
+  $array_imagens[] = 'https://i.imgur.com/rkjziXW.png';
+  $array_imagens[] = 'https://i.imgur.com/0uPCgvu.png';
+  $array_imagens[] = 'https://i.imgur.com/ZCn2DPT.png';
+  $array_imagens[] = 'https://i.imgur.com/CEtkmOa.png';
+  $array_imagens[] = 'https://i.imgur.com/9MHlmjp.png';
+  $array_imagens[] = 'https://i.imgur.com/KCenftZ.png';
+  $array_imagens[] = 'https://i.imgur.com/wtIwDwf.png';
   $array_servicos_laravel_vue_inertia['imagens'] = $array_imagens;
   $array_videos = array();
   $array_servicos_laravel_vue_inertia['videos'] = $array_videos;

@@ -255,6 +255,10 @@
   border: 1px solid #9258E8;
   background-color: #9258E8;
 }
+#div_servicos_laravel_vue_inertia>.aba_imagens>table{
+  border: 1px solid #545E80;
+  background-color: #545E80;
+}
 .aba_imagens>table>tbody>tr>td{
   min-width: calc(100% / 3);
   max-width: calc(100% / 3);
