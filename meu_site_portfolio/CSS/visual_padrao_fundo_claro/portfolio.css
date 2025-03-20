@@ -259,6 +259,10 @@
   border: 1px solid #545E80;
   background-color: #545E80;
 }
+#div_teste_da_clinica_experts>.aba_imagens>table{
+  border: 1px solid #60B860;
+  background-color: #60B860;
+}
 .aba_imagens>table>tbody>tr>td{
   min-width: calc(100% / 3);
   max-width: calc(100% / 3);
