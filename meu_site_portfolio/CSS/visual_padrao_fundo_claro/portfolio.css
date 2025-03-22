@@ -263,6 +263,10 @@
   border: 1px solid #60B860;
   background-color: #60B860;
 }
+#div_teste_da_proconsult>.aba_imagens>table{
+  border: 1px solid #7020A0;
+  background-color: #7020A0;
+}
 .aba_imagens>table>tbody>tr>td{
   min-width: calc(100% / 3);
   max-width: calc(100% / 3);
