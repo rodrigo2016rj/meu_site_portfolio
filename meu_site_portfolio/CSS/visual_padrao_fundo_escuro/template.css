@@ -1,8 +1,8 @@
 /* Estilos iniciais */
 body{
   margin: 0px;
-  background-color: #FFF;
-  color: #3D3D3D;
+  background-color: #303030;
+  color: #F0F0F0;
   font-family: Verdana, Tahoma, Times New Roman, serif;
   font-size: 12pt;
 }
@@ -18,15 +18,15 @@ p{
   text-align: justify;
 }
 a{
-  color: #0000B0;
+  color: #60F0F0;
   text-decoration: none;
   cursor: pointer;
 }
 a:visited{
-  color: #0000B0;
+  color: #60F0F0;
 }
 a:hover{
-  color: #0000B0;
+  color: #60F0F0;
   text-decoration: underline;
 }
 img{
@@ -37,7 +37,7 @@ img{
 #div_cabecalho_do_sistema{
   position: relative;
   padding-top: 32px;
-  background-color: #E0E0FF;
+  background-color: #202020;
 }
 @media(max-width: 640px){
   #div_cabecalho_do_sistema{
@@ -69,6 +69,7 @@ img{
   }
 }
 #h1_titulo_do_sistema{
+  color: #80FF80;
   text-align: center;
 }
 @media(max-width: 640px){
@@ -81,9 +82,9 @@ img{
 }
 #nav_menu_do_sistema{
   margin-top: 40px;
-  border-top: 1px solid #404090;
-  border-bottom: 1px solid #404090;
-  background-color: #FFF;
+  border-top: 1px solid #909090;
+  border-bottom: 1px solid #909090;
+  background-color: #2D2D2D;
   text-align: center;
 }
 @media(max-width: 640px){
@@ -98,7 +99,7 @@ img{
 }
 .opcao_do_menu_do_sistema{
   display: inline-block;
-  border-left: 1px solid #404090;
+  border-left: 1px solid #909090;
   padding: 30px 8px;
   width: calc(100% / 3 - 1px - 16px);
   vertical-align: top;
@@ -109,12 +110,13 @@ img{
   padding-left: 9px;
 }
 .opcao_do_menu_do_sistema.destaque{
-  background-color: #EDEDFF;
+  background-color: #262626;
+  color: #FAFA50;
 }
 .opcao_do_menu_do_sistema:hover{
-  border-left: 1px solid #404090;
-  background-color: #404090;
-  color: #FFF;
+  border-left: 1px solid #909090;
+  background-color: #222222;
+  color: #FAFA50;
   text-decoration: none;
 }
 .opcao_do_menu_do_sistema:first-child:hover{
@@ -130,10 +132,9 @@ img{
 /* Rodapé do sistema */
 #div_rodape_do_sistema{
   position: relative;
-  border-top: 1px solid #000;
+  border-top: 1px solid #909090;
   padding-bottom: 30px;
-  background-color: #E0E0FF;
-  color: #000;
+  background-color: #202020;
   z-index: 2;
 }
 #div_autor_do_sistema{
@@ -178,8 +179,8 @@ img{
   border-radius: 25px;
   width: 50px;
   height: 50px;
-  background-color: #000;
-  color: #FFF;
+  background-color: #C8C8C8;
+  color: #000;
   font-size: 28pt;
   text-align: center;
   cursor: pointer;

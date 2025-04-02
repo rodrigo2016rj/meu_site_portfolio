@@ -30,6 +30,57 @@ document.addEventListener("DOMContentLoaded", function(){
   
   div_tronco_do_sistema.style.minHeight = altura_minima + "px";
   
+  /* Opções de Visual */
+  const link_visual_padrao_fundo_claro = document.getElementById("link_visual_padrao_fundo_claro");
+  const link_visual_padrao_fundo_escuro = document.getElementById("link_visual_padrao_fundo_escuro");
+  
+  link_visual_padrao_fundo_claro.addEventListener("click", evento_escolher_visual);
+  link_visual_padrao_fundo_escuro.addEventListener("click", evento_escolher_visual);
+  
+  function evento_escolher_visual(evento){
+    evento.preventDefault();
+    
+    const tag_que_disparou_o_evento = evento.currentTarget;
+    
+    let visual = "";
+    switch(tag_que_disparou_o_evento.getAttribute("id")){
+      case "link_visual_padrao_fundo_claro":
+        visual = "visual_padrao_fundo_claro";
+      break;
+      case "link_visual_padrao_fundo_escuro":
+        visual = "visual_padrao_fundo_escuro";
+      break;
+    }
+    
+    /* Requisição ajax */
+    let conexao_ajax = null;
+    if(window.XMLHttpRequest){
+      conexao_ajax = new XMLHttpRequest();
+      const tipo = "POST";
+      let url_mais = "";
+      let url = "template.php?acao=escolher_visual_via_ajax" + url_mais;
+      let dados_post = {visual: visual};
+      let resposta = null;
+      conexao_ajax.onreadystatechange = function(){
+        if(conexao_ajax.readyState == 4){
+          if(conexao_ajax.status == 200){
+            resposta = JSON.parse(conexao_ajax.responseText);
+            let cookie = `${resposta.nome_do_cookie}=${resposta.valor_do_cookie};`;
+            cookie += ` max-age=${resposta.vencimento_do_cookie};`;
+            cookie += ` path='${resposta.caminho_do_cookie}';`;
+            cookie += ` domain=${resposta.dominio_do_cookie};`;
+            cookie += ` SameSite=${resposta.restricao_do_cookie};`;
+            document.cookie = cookie;
+            window.location.reload(true);
+          }
+        }
+      }
+      conexao_ajax.open(tipo, url, true);
+      conexao_ajax.setRequestHeader("Content-Type", "application/json");
+      conexao_ajax.send(JSON.stringify(dados_post));
+    }
+  }
+  
   /* Ao clicar em uma imagem, acionar a div_imagem_no_tamanho_original: */
   const div_rodape_do_sistema = document.getElementById("div_rodape_do_sistema");
   const div_imagem_no_tamanho_original = document.getElementById("div_imagem_no_tamanho_original");
@@ -66,5 +117,4 @@ document.addEventListener("DOMContentLoaded", function(){
     window.scrollTo(0, backup_do_scroll_y);
     imagem_no_tamanho_original.setAttribute("src", "");
   }
-  
 });

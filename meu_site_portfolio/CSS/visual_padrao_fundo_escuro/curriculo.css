@@ -1,0 +1,116 @@
+#div_curriculo{
+  margin-right: auto;
+  margin-left: auto;
+  padding: 40px 20px 60px 20px;
+  max-width: calc(1000px - 20px - 20px);
+  line-height: 28px;
+  font-size: 14pt;
+  text-align: justify;
+  text-indent: 76px;
+}
+@media(max-width: 880px){
+  #div_curriculo{
+    padding: 20px 10px 40px 10px;
+    max-width: calc(1000px - 10px - 10px);
+    text-indent: 38px;
+  }
+}
+@media(max-width: 730px){
+  #div_curriculo{
+    padding-top: 7px;
+    text-indent: 0px;
+  }
+}
+@media(max-width: 690px){
+  #div_curriculo{
+    font-size: 12pt;
+    line-height: 22px;
+  }
+}
+.parte{
+  margin-top: 28px;
+}
+.item{
+  margin-top: 2px;
+}
+@media(max-width: 730px){
+  .parte{
+    margin-top: 24px;
+  }
+  .item{
+    margin-top: 2px;
+  }
+}
+@media(max-width: 690px){
+  .parte{
+    margin-top: 32px;
+  }
+  .item{
+    margin-top: 6px;
+  }
+}
+#div_informacoes{
+  margin-top: 0px;
+}
+.informacao:first-child{
+  margin-top: 0px;
+}
+@media(max-width: 690px){
+  .informacao{
+    overflow: hidden;
+  }
+  .informacao>span{
+    float: left;
+  }
+  .informacao>a{
+    display: block;
+    float: left;
+    margin-left: 5px;
+    max-width: calc(100% - 90px - 5px);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .experiencia_com_carteira_assinada{
+    margin-top: 12px;
+  }
+  .curso{
+    margin-top: 12px;
+  }
+  .certificacao{
+    margin-top: 12px;
+  }
+  .certificado{
+    margin-top: 12px;
+  }
+  .separador{
+    display: none;
+  }
+  .data_do_curso{
+    display: block;
+  }
+  .nome_do_curso{
+    display: block;
+  }
+  .instituicao_do_curso{
+    display: block;
+  }
+  .data_da_certificacao{
+    display: block;
+  }
+  .nome_da_certificacao{
+    display: block;
+  }
+  .instituicao_da_certificacao{
+    display: block;
+  }
+  .data_do_certificado{
+    display: block;
+  }
+  .nome_do_certificado{
+    display: block;
+  }
+  .instituicao_do_certificado{
+    display: block;
+  }
+}

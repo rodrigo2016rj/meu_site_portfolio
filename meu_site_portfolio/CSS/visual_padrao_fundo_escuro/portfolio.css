@@ -1,0 +1,341 @@
+#div_tronco_do_sistema{
+  position: relative;
+}
+#div_catalogo{
+  position: fixed;
+  border-bottom: 1px solid #909090;
+  padding: 26px 30px 30px 30px;
+  width: calc(300px - 30px - 30px);
+  max-height: calc(700px - 1px - 26px - 30px);
+  background-color: #282828;
+  overflow-y: scroll;
+  z-index: 1;
+}
+@media(max-width: 920px){
+  #div_catalogo{
+    padding: 26px 20px 30px 20px;
+    width: calc(280px - 20px - 20px);
+  }
+}
+@media(max-width: 900px){
+  #div_catalogo{
+    padding: 26px 10px 30px 10px;
+    width: calc(260px - 10px - 10px);
+  }
+}
+@media(max-width: 860px){
+  #div_catalogo{
+    display: none;
+  }
+}
+@media(max-height: 900px){
+  #div_catalogo{
+    max-height: calc(600px - 26px - 30px);
+  }
+}
+@media(max-height: 800px){
+  #div_catalogo{
+    max-height: calc(500px - 26px - 30px);
+  }
+}
+@media(max-height: 700px){
+  #div_catalogo{
+    max-height: calc(400px - 26px - 30px);
+  }
+}
+@media(max-height: 600px){
+  #div_catalogo{
+    max-height: calc(300px - 26px - 30px);
+  }
+}
+@media(max-height: 500px){
+  #div_catalogo{
+    max-height: calc(200px - 26px - 30px);
+  }
+}
+@media(max-height: 400px){
+  #div_catalogo{
+    max-height: calc(100px - 26px - 30px);
+  }
+}
+#h2_titulo_do_catalogo{
+  font-size: 18pt;
+  text-align: center;
+}
+#div_lista_do_catalogo{
+  margin-top: 20px;
+}
+#link_topo{
+  color: #FFA810;
+}
+.item_do_catalogo{
+  display: block;
+  margin-top: 25px;
+}
+.item_do_catalogo:first-child{
+  margin-top: 0px;
+}
+.item_do_catalogo.destaque{
+  font-weight: bold;
+}
+#link_demonstracao_de_slides_com_code_igniter{
+  max-width: 90%;
+}
+#link_login_laravel_pdo_vue_inertia{
+  max-width: 90%;
+}
+#div_projetos{
+  position: relative;
+  left: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 26px 30px 360px 30px;
+  max-width: 1800px;
+}
+@media(max-width: 2200px){
+  #div_projetos{
+    left: 320px;
+    margin-right: 0px;
+    margin-left: 0px;
+    border-left: 1px solid #909090;
+    width: calc(100% - 320px - 1px - 30px - 30px);
+  }
+}
+@media(max-width: 1920px){
+  #div_projetos{
+    left: 300px;
+    width: calc(100% - 300px - 1px - 30px - 30px);
+  }
+}
+@media(max-width: 920px){
+  #div_projetos{
+    left: 280px;
+    width: calc(100% - 280px - 1px - 30px - 30px);
+  }
+}
+@media(max-width: 900px){
+  #div_projetos{
+    left: 260px;
+    width: calc(100% - 260px - 1px - 30px - 30px);
+  }
+}
+@media(max-width: 860px){
+  #div_projetos{
+    left: 0px;
+    border-left: none;
+    padding: 16px 20px 20px 20px;
+    width: calc(100% - 20px - 20px);
+  }
+}
+#h2_titulo_dos_projetos{
+  font-size: 18pt;
+}
+#h2_titulo_dos_projetos>#span_instrucao_dos_projetos{
+  font-size: 12pt;
+}
+.projeto{
+  margin-top: 26px;
+  border-top: 1px solid #C4C4C4;
+  padding-top: 4px;
+}
+.titulo_do_projeto{
+  font-size: 15pt;
+}
+.quebra_de_linha_magica{
+  display: none;
+}
+@media(max-width: 920px){
+  .quebra_de_linha_magica{
+    display: inline;
+  }
+}
+.rotulo_da_aba{
+  margin-left: 30px;
+  font-size: 12pt;
+}
+.rotulo_da_aba.destaque{
+  color: #FAFA50;
+}
+@media(max-width: 920px){
+  .rotulo_da_aba_descricao{
+    margin-left: 0px;
+  }
+}
+.aba{
+  margin-top: 22px;
+  overflow: hidden;
+}
+@media(max-width: 920px){
+  .aba{
+    margin-top: 10px;
+  }
+}
+.local_da_imagem_destaque_do_projeto{
+  float: left;
+}
+.imagem_destaque_do_projeto{
+  width: 720px;
+}
+.local_da_descricao_do_projeto{
+  float: left;
+  margin-left: 20px;
+  width: calc(100% - 720px - 20px);
+  text-align: justify;
+}
+@media(max-width: 1650px){
+  .imagem_destaque_do_projeto{
+    width: 540px;
+  }
+  .local_da_descricao_do_projeto{
+    width: calc(100% - 540px - 20px);
+  }
+}
+@media(max-width: 1280px){
+  .local_da_imagem_destaque_do_projeto{
+    margin-right: 10px;
+  }
+  .local_da_descricao_do_projeto{
+    float: none;
+    margin-left: 0px;
+    width: 100%;
+  }
+}
+@media(max-width: 1160px){
+  .local_da_imagem_destaque_do_projeto{
+    float: none;
+    margin-right: 0px;
+  }
+  .imagem_destaque_do_projeto{
+    width: 100%;
+  }
+  .local_da_descricao_do_projeto{
+    margin-top: 5px;
+  }
+}
+.aba_imagens>table{
+  border-collapse: collapse;
+  min-width: 100%;
+  max-width: 100%;
+}
+#div_create_test_tabs_firefox>.aba_imagens>table{
+  border: 1px solid #404090;
+  background-color: #404090;
+}
+#div_crud_laravel_bootstrap>.aba_imagens>table{
+  border: 1px solid #F0A050;
+  background-color: #F0A050;
+}
+#div_crud_laravel_javascript>.aba_imagens>table{
+  border: 1px solid #00C000;
+  background-color: #00C000;
+}
+#div_crud_laravel_jquery>.aba_imagens>table{
+  border: 1px solid #00C0F0;
+  background-color: #00C0F0;
+}
+#div_crud_laravel_react>.aba_imagens>table{
+  border: 1px solid #E4E400;
+  background-color: #E4E400;
+}
+#div_crud_laravel_vue_inertia>.aba_imagens>table{
+  border: 1px solid #10DA50;
+  background-color: #10DA50;
+}
+#div_demonstracao_de_slides_com_code_igniter>.aba_imagens>table{
+  border: 1px solid #007600;
+  background-color: #007600;
+}
+#div_desafio_da_construp>.aba_imagens>table{
+  border: 1px solid #2020A2;
+  background-color: #2020A2;
+}
+#div_login_codeigniter_jquery>.aba_imagens>table{
+  border: 1px solid #404070;
+  background-color: #404070;
+}
+#div_login_laravel_pdo_vue_inertia>.aba_imagens>table{
+  border: 1px solid #9258E8;
+  background-color: #9258E8;
+}
+#div_servicos_laravel_vue_inertia>.aba_imagens>table{
+  border: 1px solid #545E80;
+  background-color: #545E80;
+}
+#div_teste_da_clinica_experts>.aba_imagens>table{
+  border: 1px solid #60B860;
+  background-color: #60B860;
+}
+#div_teste_da_proconsult>.aba_imagens>table{
+  border: 1px solid #7020A0;
+  background-color: #7020A0;
+}
+.aba_imagens>table>tbody>tr>td{
+  min-width: calc(100% / 3);
+  max-width: calc(100% / 3);
+}
+.local_da_imagem_do_projeto{
+  min-height: 260px;
+  max-height: 260px;
+  background-color: #FFF;
+  text-align: center;
+  overflow: hidden;
+}
+.celula_vazia{
+  min-height: 260px;
+  max-height: 260px;
+  background-color: #303030;
+}
+@media(max-width: 1750px){
+  .local_da_imagem_do_projeto{
+    min-height: 220px;
+    max-height: 220px;
+  }
+  .celula_vazia{
+    min-height: 220px;
+    max-height: 220px;
+  }
+}
+@media(max-width: 1380px){
+  .local_da_imagem_do_projeto{
+    min-height: 180px;
+    max-height: 180px;
+  }
+  .celula_vazia{
+    min-height: 180px;
+    max-height: 180px;
+  }
+}
+@media(max-width: 1200px){
+  .local_da_imagem_do_projeto{
+    min-height: 140px;
+    max-height: 140px;
+  }
+  .celula_vazia{
+    min-height: 140px;
+    max-height: 140px;
+  }
+}
+@media(max-width: 1080px){
+  .local_da_imagem_do_projeto{
+    min-height: 110px;
+    max-height: 110px;
+  }
+  .celula_vazia{
+    min-height: 110px;
+    max-height: 110px;
+  }
+}
+@media(max-width: 580px){
+  .local_da_imagem_do_projeto{
+    min-height: 80px;
+    max-height: 80px;
+  }
+  .celula_vazia{
+    min-height: 80px;
+    max-height: 80px;
+  }
+}
+.imagem_do_projeto{
+  min-width: 100%;
+  max-width: 100%;
+}
