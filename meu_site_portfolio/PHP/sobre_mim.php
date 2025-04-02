@@ -22,8 +22,11 @@ function carregar_pagina(){
 
   $visual_escolhido = 'visual_padrao_fundo_claro';
   if(isset($_COOKIE['visual_escolhido'])){
-    if($_COOKIE['visual_escolhido'] !== '' and $_COOKIE['visual_escolhido'] !== null){
-      $visual_escolhido = htmlspecialchars($_COOKIE['visual_escolhido']);
+    switch($_COOKIE['visual_escolhido']){
+      case 'visual_padrao_fundo_claro':
+      case 'visual_padrao_fundo_escuro':
+        $visual_escolhido = $_COOKIE['visual_escolhido'];
+        break;
     }
   }
   $html = str_replace('{visual_escolhido}', $visual_escolhido, $html);
