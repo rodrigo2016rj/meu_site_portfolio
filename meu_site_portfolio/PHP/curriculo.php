@@ -1,22 +1,7 @@
 <?php
 
-require_once 'template.php';
-
-define('CAMINHO_DESTE_ARQUIVO', '/meu_site_portfolio/curriculo.php');
-
-if(getallheaders()['Sec-Fetch-Site'] != 'same-origin'){
-  $html = file_get_contents('../HTML/nova_requisicao.html');
-
-  $endereco = HTTP_OU_HTTPS.DOMINIO_DO_SITE.CAMINHO_DESTE_ARQUIVO;
-  $html = str_replace('{endereco}', $endereco, $html);
-
-  echo $html;
-  die;
-}
-
 if(strlen($_SERVER['REQUEST_URI']) > 33 and substr($_SERVER['REQUEST_URI'], 33, 1) !== '?'){
-  header('Location: '.CAMINHO_DESTE_ARQUIVO);
-  die;
+  header('Location: /meu_site_portfolio/curriculo.php');
 }
 
 $acao = isset($_GET['acao']) ? $_GET['acao'] : '';
@@ -50,5 +35,4 @@ function carregar_pagina(){
   $html = str_replace('{conteudo_da_pagina}', $html_conteudo_da_pagina, $html);
 
   echo $html;
-  die;
 }

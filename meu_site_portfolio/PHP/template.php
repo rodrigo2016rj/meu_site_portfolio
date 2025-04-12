@@ -1,6 +1,5 @@
 <?php
 
-define('HTTP_OU_HTTPS', 'http://');
 define('DOMINIO_DO_SITE', 'localhost');
 
 $acao = isset($_GET['acao']) ? $_GET['acao'] : '';
@@ -31,7 +30,7 @@ function escolher_visual_via_ajax(){
   $retorno['vencimento_do_cookie'] = $cem_anos;
   $retorno['caminho_do_cookie'] = '/';
   $retorno['dominio_do_cookie'] = DOMINIO_DO_SITE;
-  $retorno['restricao_do_cookie'] = 'Strict';
+  $retorno['restricao_do_cookie'] = 'Lax';
 
   echo json_encode($retorno);
   die;
