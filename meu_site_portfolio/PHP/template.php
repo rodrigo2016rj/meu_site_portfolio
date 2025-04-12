@@ -1,5 +1,6 @@
 <?php
 
+define('HTTP_OU_HTTPS', 'http://');
 define('DOMINIO_DO_SITE', 'localhost');
 
 $acao = isset($_GET['acao']) ? $_GET['acao'] : '';
