@@ -339,3 +339,17 @@
   min-width: 100%;
   max-width: 100%;
 }
+.local_das_instrucoes_sobre_como_assistir_aos_videos{
+  width: 100%;
+  max-width: 960px;
+  line-height: 22px;
+  text-align: justify;
+}
+.local_do_video_do_projeto{
+  margin-top: 10px;
+}
+.video_do_projeto{
+  width: 100%;
+  max-width: 960px;
+  height: 540px;
+}

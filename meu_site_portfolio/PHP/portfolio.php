@@ -216,6 +216,7 @@ https://github.com/rodrigo2016rj/crud_laravel_jquery</a>';
   $array_imagens[] = 'https://i.imgur.com/VVitOf0.png';
   $array_crud_laravel_jquery['imagens'] = $array_imagens;
   $array_videos = array();
+  $array_videos[] = 'https://www.youtube.com/embed/M1CbtARTHYs';
   $array_crud_laravel_jquery['videos'] = $array_videos;
 
   $array_projetos[] = $array_crud_laravel_jquery;
@@ -781,10 +782,13 @@ https://gitlab.com/rodrigo2016rj/teste_da_proconsult</a>';
     foreach($array_projeto['videos'] as $video){
       $html_video_do_projeto = file_get_contents('../HTML/portfolio/video_do_projeto.html');
       $html_video_do_projeto = str_replace('{video}', $video, $html_video_do_projeto);
-      $html_videos_do_projeto .= $html_video_do_projeto;
+      $html_videos_do_projeto .= "\n$html_video_do_projeto";
     }
     if($html_videos_do_projeto === ''){
       $html_videos_do_projeto = '<span>Em breve</span>';
+    }else{
+      $html_instrucoes_sobre_como_assistir_aos_videos = file_get_contents('../HTML/portfolio/instrucoes_sobre_como_assistir_aos_videos.html');
+      $html_videos_do_projeto = $html_instrucoes_sobre_como_assistir_aos_videos.$html_videos_do_projeto;
     }
     $html_projeto = str_replace('{videos_do_projeto}', $html_videos_do_projeto, $html_projeto);
 
