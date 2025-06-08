@@ -77,6 +77,7 @@ https://addons.mozilla.org/firefox/addon/create-test-tabs/</a>';
   $array_imagens[] = 'https://i.imgur.com/PdoWYow.png';
   $array_create_test_tabs_firefox['imagens'] = $array_imagens;
   $array_videos = array();
+  $array_videos[] = 'https://www.youtube.com/embed/jiW2k3FbUus';
   $array_create_test_tabs_firefox['videos'] = $array_videos;
 
   $array_projetos[] = $array_create_test_tabs_firefox;
