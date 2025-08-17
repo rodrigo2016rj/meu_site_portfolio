@@ -170,6 +170,7 @@ https://github.com/rodrigo2016rj/crud_laravel_javascript</a>';
   $array_imagens[] = 'https://i.imgur.com/K9lP5Ib.png';
   $array_crud_laravel_javascript['imagens'] = $array_imagens;
   $array_videos = array();
+  $array_videos[] = 'https://www.youtube.com/embed/kJHQ3WeNL-A';
   $array_crud_laravel_javascript['videos'] = $array_videos;
 
   $array_projetos[] = $array_crud_laravel_javascript;
