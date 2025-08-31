@@ -321,6 +321,7 @@ https://github.com/rodrigo2016rj/crud_laravel_vue_inertia</a>';
   $array_imagens[] = 'https://i.imgur.com/EvAgOZl.png';
   $array_crud_laravel_vue_inertia['imagens'] = $array_imagens;
   $array_videos = array();
+  $array_videos[] = 'https://www.youtube.com/embed/zekEqeP4YCA';
   $array_crud_laravel_vue_inertia['videos'] = $array_videos;
 
   $array_projetos[] = $array_crud_laravel_vue_inertia;
