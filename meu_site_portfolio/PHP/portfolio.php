@@ -218,7 +218,7 @@ https://github.com/rodrigo2016rj/crud_laravel_jquery</a>';
   $array_imagens[] = 'https://i.imgur.com/VVitOf0.png';
   $array_crud_laravel_jquery['imagens'] = $array_imagens;
   $array_videos = array();
-  $array_videos[] = 'https://www.youtube.com/embed/M1CbtARTHYs';
+  $array_videos[] = 'https://www.youtube.com/embed/dhTPPPvBU6M';
   $array_crud_laravel_jquery['videos'] = $array_videos;
 
   $array_projetos[] = $array_crud_laravel_jquery;
@@ -268,7 +268,7 @@ https://github.com/rodrigo2016rj/crud_laravel_react</a>';
   $array_imagens[] = 'https://i.imgur.com/8a2EByG.png';
   $array_crud_laravel_react['imagens'] = $array_imagens;
   $array_videos = array();
-  $array_videos[] = 'https://www.youtube.com/embed/ZoHBP6X6tZs';
+  $array_videos[] = 'https://www.youtube.com/embed/ICRoPZnUI3o';
   $array_crud_laravel_react['videos'] = $array_videos;
 
   $array_projetos[] = $array_crud_laravel_react;
