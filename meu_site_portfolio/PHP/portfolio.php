@@ -122,6 +122,7 @@ https://github.com/rodrigo2016rj/crud_laravel_bootstrap</a>';
   $array_imagens[] = 'https://i.imgur.com/1aElHhv.png';
   $array_crud_laravel_bootstrap['imagens'] = $array_imagens;
   $array_videos = array();
+  $array_videos[] = 'https://www.youtube.com/embed/gfIT2gpiPl8';
   $array_crud_laravel_bootstrap['videos'] = $array_videos;
 
   $array_projetos[] = $array_crud_laravel_bootstrap;
