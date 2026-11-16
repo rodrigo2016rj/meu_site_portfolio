@@ -35,6 +35,58 @@ function carregar_pagina(){
 
   $array_projetos = array();
 
+  $array_categorize_customers = array();
+  $array_categorize_customers['nome'] = 'Categorize Customers';
+  $array_categorize_customers['identificador'] = 'categorize_customers';
+  $array_categorize_customers['imagem_destaque'] = 'https://i.imgur.com/d9EEDtk.png';
+  $array_categorize_customers['descricao'] = 'Este projeto é um aplicativo para Salesforce que 
+permite ao usuário criar tags com nome e cor para organizar melhor as contas (Accounts). Essas tags 
+são chamadas de Customer Tags, mas podem ser atribuídas também para qualquer tipo de conta além das 
+contas do tipo customer. O sistema permite criar e atribuir tags, e também apresenta para o usuário 
+uma lista paginada com as informações das contas: nome da conta, tipo da conta, receita anual, 
+classificação da conta, website, cidade, estado, setor, nome do proprietário e tags atribuídas. 
+O usuário pode encontrar facilmente qualquer conta que queira por meio dos filtros: uma ou mais 
+tags, parte do nome do proprietário, parte do nome da conta, tipos de conta, receita anual 
+(maior que e menor que), classificações de conta, parte do nome da cidade, sigla da unidade da 
+federação (estados, distritos e províncias) e parte do nome do setor. O usuário também pode ordenar 
+a lista de contas e escolher a quantidade de registros por página da lista. Eu fiz este projeto com 
+Apex, SOQL, LWC, Javascript, HTML, CSS e GIT.
+<br/>
+<br/>
+Acesse a página do Categorize Customers no GitHub:
+<br/>
+<a href="https://github.com/rodrigo2016rj/categorize_customers" target="blank">
+https://github.com/rodrigo2016rj/categorize_customers</a>
+<br/>
+<br/>
+Acesse a página do Categorize Customers no AgentExchange (AppExchange):
+<br/>
+<a href="https://appexchange.salesforce.com/appxListingDetail?listingId=69b09d04-ac6e-4d3f-a8e8-e16935378a95" target="blank">
+https://appexchange.salesforce.com/appxListingDetail?listingId=69b09d04-ac6e-4d3f-a8e8-e16935378a95</a>';
+  $array_imagens = array();
+  $array_imagens[] = 'https://i.imgur.com/d9EEDtk.png';
+  $array_imagens[] = 'https://i.imgur.com/P7uvrkR.png';
+  $array_imagens[] = 'https://i.imgur.com/1nYHU4U.png';
+  $array_imagens[] = 'https://i.imgur.com/0ZM7vIy.png';
+  $array_imagens[] = 'https://i.imgur.com/41gmJC0.png';
+  $array_imagens[] = 'https://i.imgur.com/8wUePtd.png';
+  $array_imagens[] = 'https://i.imgur.com/xqeDsNm.png';
+  $array_imagens[] = 'https://i.imgur.com/22J1wPQ.png';
+  $array_imagens[] = 'https://i.imgur.com/5Zinib9.png';
+  $array_imagens[] = 'https://i.imgur.com/DXoVpII.png';
+  $array_imagens[] = 'https://i.imgur.com/NcwGcFV.png';
+  $array_imagens[] = 'https://i.imgur.com/Ej94X0W.png';
+  $array_imagens[] = 'https://i.imgur.com/8WhFMZz.png';
+  $array_imagens[] = 'https://i.imgur.com/dY8Js4t.png';
+  $array_imagens[] = 'https://i.imgur.com/riS4OYG.png';
+  $array_imagens[] = 'https://i.imgur.com/y83bppv.png';
+  $array_categorize_customers['imagens'] = $array_imagens;
+  $array_videos = array();
+  $array_videos[] = 'https://www.youtube.com/embed/AmOMmIezWx0';
+  $array_categorize_customers['videos'] = $array_videos;
+
+  $array_projetos[] = $array_categorize_customers;
+
   $array_create_test_tabs_firefox = array();
   $array_create_test_tabs_firefox['nome'] = 'Create Test Tabs FireFox';
   $array_create_test_tabs_firefox['identificador'] = 'create_test_tabs_firefox';

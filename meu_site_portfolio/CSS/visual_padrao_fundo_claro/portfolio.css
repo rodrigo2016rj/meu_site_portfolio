@@ -215,6 +215,10 @@
   min-width: 100%;
   max-width: 100%;
 }
+#div_categorize_customers>.aba_imagens>table{
+  border: 1px solid #0D9DDA;
+  background-color: #0D9DDA;
+}
 #div_create_test_tabs_firefox>.aba_imagens>table{
   border: 1px solid #404090;
   background-color: #404090;
